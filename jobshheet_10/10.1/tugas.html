@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Savero Athallah | Portfolio</title>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+		<style>
+			:root {
+				--navy-900: #0a2342; 
+				--navy-700: #193b68;
+				--navy-500: #235a9f; 
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body { padding-top: 72px; }
+
+			.bg-navy {
+				background-color: var(--navy-900) !important;
+			}
+
+			.text-navy {
+				color: var(--navy-900) !important;
+			}
+
+			.btn-navy {
+				background-color: var(--navy-900);
+				color: #fff;
+				border-color: var(--navy-900);
+			}
+			.btn-navy:hover {
+				background-color: var(--navy-700);
+				border-color: var(--navy-700);
+				color: #fff;
+			}
+
+			.hero {
+				background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-700) 100%);
+				color: #fff;
+			}
+
+			.avatar-xl {
+				border-radius: 50%;
+				border: 8px solid rgba(255, 255, 255, 0.2);
+				box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+				max-width: 320px;
+			}
+
+			.section-title { position: relative; padding-bottom: .5rem; }
+			.section-title::after {
+				content: "";
+				display: block;
+				width: 64px;
+				height: 3px;
+				background: var(--navy-500);
+				border-radius: 3px;
+				margin-top: .5rem;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top shadow-sm">
+			<div class="container">
+				<a class="navbar-brand fw-semibold" href="#home">Savero Athallah | Portfolio</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#mainNav"
+					aria-controls="mainNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="mainNav">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<header id="home" class="hero py-5">
+			<div class="container py-4">
+				<div class="row align-items-center g-4">
+					<div class="col-lg-7">
+						<p class="text-uppercase opacity-75 mb-1">Hello My Name</p>
+						<h1 class="display-3 fw-bold mb-2">Savero Athallah</h1>
+						<h2 class="h1 fw-semibold mb-3">Junior Backend Developer</h2>
+						<p class="lead mb-4">
+							A passionate IT student dedicated to backend development, focused on API design,
+							database management, and building scalable, efficient systems.
+						</p>
+						<div class="d-flex gap-2">
+							<a href="#projects" class="btn btn-navy btn-lg">My Project</a>
+							<a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+						</div>
+					</div>
+					<div class="col-lg-5 text-center">
+						<img src="vero.jpg" alt="Profile portrait" class="img-fluid avatar-xl" />
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section id="about" class="py-5 bg-light">
+			<div class="container">
+				<div class="row align-items-center g-4">
+					<div class="col-md-6 order-md-2">
+						<h2 class="h3 fw-bold text-navy section-title mb-3">About Me</h2>
+						<p class="mb-3">
+							I build reliable backend services with an emphasis on clean API design,
+							robust database schemas, authentication/authorization, and observability.
+						</p>
+						<p class="mb-4">
+							I constantly learn and improve, aiming for readable, maintainable, and well-structured code.
+						</p>
+						<div class="row">
+							<div class="col-sm-6">
+								<ul class="mb-3">
+									<li>Laravel & PHP</li>
+									<li>MySQL & PostgreSQL</li>
+									<li>Docker & CI/CD</li>
+								</ul>
+							</div>
+							<div class="col-sm-6">
+								<ul class="mb-3">
+									<li>Golang</li>
+									<li>RESTful API Design</li>
+									<li>Testing & Debugging</li>
+								</ul>
+							</div>
+						</div>
+						<a class="btn btn-navy" href="#contact">Let's Collaborate</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="py-5">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 text-center">
+						<h2 class="h3 fw-bold text-navy section-title mb-3">My Project</h2>
+						<p class="mb-4">A simple showcase of backend-focused work (sample).</p>
+						<a class="btn btn-outline-secondary" href="#contact">Request details</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="py-5">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 text-center">
+						<h2 class="h3 fw-bold text-navy section-title mb-3">Contact</h2>
+						<p class="mb-4">Open for discussions and backend collaboration.</p>
+						<a class="btn btn-navy btn-lg" href="mailto:you@example.com">Email Me</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="py-4 bg-navy text-white-50">
+			<div class="container text-center small">
+				© 2025 Savero Athallah — Backend Developer
+			</div>
+		</footer>
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+	</html>
